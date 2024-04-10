@@ -4,69 +4,87 @@ pragma solidity ^0.8.0;
 import "./Post.sol";
 
 contract MisinformationReport {
-    struct Report {
-        uint reportId;
-        uint postId;
+    // The VerificationStatus enum based on the ERD
+    enum VerificationStatusEnum { INVALID, VOTING_IN_PROGRESS, VERIFIED }
+
+    // The Report struct based on the ERD
+    struct MisinformationReportStruct {
+        uint256 reportId;
+        uint256 postId;
         address reporter;
         string justification;
-        uint timestamp;
-        bool isResolved;
-        bool isValid;
+        uint256 timestamp;
+        VerificationStatusEnum status;
+        address verifier; // Address of the user who verifies the report
     }
 
     Post public postContract;
-    Report[] public reports;
-    uint public nextReportId;
+    MisinformationReportStruct[] public reports;
+    uint256 public nextReportId;
 
-    mapping(uint => uint[]) public votesValid; // postId => [votes]
-    mapping(uint => uint[]) public votesInvalid; // postId => [votes]
+    // Events as per the ERD
+    event MisinformationReportCreated(uint256 indexed reportId, uint256 indexed postId, address reporter);
+    event MisinformationReportResolved(uint256 indexed reportId, bool isValid);
+    event MisinformationReportUpdated(uint256 indexed reportId);
+    event FeePaid(address indexed verifier, uint256 amount);
+    event MisinformationReportDeleted(uint256 indexed reportId);
 
     constructor(address _postContractAddress) {
         postContract = Post(_postContractAddress);
     }
 
-    function reportMisinformation(uint _postId, string memory _justification) public {
-        Post.PostData memory postData = postContract.getPost(_postId);
-        require(postData.author != address(0), "Post does not exist.");
-        reports.push(Report(nextReportId, _postId, msg.sender, _justification, block.timestamp, false, false));
+    function addMisinformationReport(uint256 _postId, string memory _justification) public {
+        // Fetch the post using the post contract to make sure it exists
+        Post.PostStruct memory postData = postContract.getPost(_postId);
+        require(postData.createdBy != address(0), "Post does not exist.");
+
+        // Create and store the report
+        MisinformationReportStruct memory newReport = MisinformationReportStruct({
+            reportId: nextReportId,
+            postId: _postId,
+            reporter: msg.sender,
+            justification: _justification,
+            timestamp: block.timestamp,
+            status: VerificationStatusEnum.VOTING_IN_PROGRESS,
+            verifier: address(0) // Initially there's no verifier
+        });
+
+        reports.push(newReport);
+        emit MisinformationReportCreated(nextReportId, _postId, msg.sender);
         nextReportId++;
     }
 
-    function voteOnReport(uint _reportId, bool _isValid) public {
+    // Other functions like deleteMisinformationReport, updateMisinformationReport, and payFee would go here
+
+    // Example of a function to resolve a report and pay a fee to the verifier
+    function resolveMisinformationReport(uint256 _reportId, bool _isValid, address _verifier) public {
         require(_reportId < reports.length, "Report does not exist.");
-        require(!reports[_reportId].isResolved, "Report is already resolved.");
-        if (_isValid) {
-            votesValid[_reportId].push(1);
-        } else {
-            votesInvalid[_reportId].push(1);
-        }
+        MisinformationReportStruct storage report = reports[_reportId];
+        require(report.status == VerificationStatusEnum.VOTING_IN_PROGRESS, "Report is not in the correct state.");
+
+        // Set the report as verified or invalid based on votes
+        report.status = _isValid ? VerificationStatusEnum.VERIFIED : VerificationStatusEnum.INVALID;
+        report.verifier = _verifier;
+
+        // Pay the fee to the verifier
+        uint256 feeAmount = calculateFee(); // You would need to implement this function
+        payable(_verifier).transfer(feeAmount);
+
+        emit MisinformationReportResolved(_reportId, _isValid);
+        emit FeePaid(_verifier, feeAmount);
     }
 
-    function resolveReport(uint _reportId) public {
+    // If _reportId is not used and no state is read, you can declare the function as pure and remove the parameter
+    function calculateFee() private pure returns (uint256) {
+        // Placeholder calculation for the fee
+        return 1 ether; // This is just an example. Adjust as necessary.
+    }
+
+    function deleteMisinformationReport(uint256 _reportId) public {
         require(_reportId < reports.length, "Report does not exist.");
-        Report storage report = reports[_reportId];
-        require(!report.isResolved, "Report is already resolved.");
-        uint validVotes = votesValid[_reportId].length;
-        uint invalidVotes = votesInvalid[_reportId].length;
-
-        report.isResolved = true;
-        if (validVotes > invalidVotes) {
-            report.isValid = true;
-        } else {
-            report.isValid = false;
-        }
+        // Additional checks for authorization, if needed
+        delete reports[_reportId];
+        emit MisinformationReportDeleted(_reportId);
     }
 
-    function getReport(uint _reportId) public view returns (Report memory) {
-        require(_reportId < reports.length, "Report does not exist.");
-        return reports[_reportId];
-    }
-
-    function getValidVotesCount(uint _reportId) public view returns (uint) {
-        return votesValid[_reportId].length;
-    }
-
-    function getInvalidVotesCount(uint _reportId) public view returns (uint) {
-        return votesInvalid[_reportId].length;
-    }
 }

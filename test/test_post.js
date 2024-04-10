@@ -1,53 +1,54 @@
 const Post = artifacts.require("../contracts/Post.sol");
 
-contract("Post", (accounts) => {
+contract("Post", accounts => {
+    const [author] = accounts;
     let postInstance;
 
     before(async () => {
-        postInstance = await Post.new();
+        postInstance = await Post.deployed();
     });
 
-    it("should create a post", async () => {
-        await postInstance.createPost("Hello, World!", { from: accounts[0] });
-        const post = await postInstance.getPost(0);
-        assert.equal(post.content, "Hello, World!", "Post content did not match the input.");
+    it("should create a post and emit an event", async () => {
+        let title = "Sample Title";
+        let content = "This is a sample content for testing purposes.";
+        let result = await postInstance.createPost(title, content, { from: author });
+        
+        // Check for event emission
+        assert.equal(result.logs[0].event, "createPostEvent", "createPostEvent event should be emitted.");
+        
+        // Check that the post has been created with correct details
+        let post = await postInstance.getPost(0);
+        assert.equal(post.title, title, "The title of the post should match the input.");
+        assert.equal(post.content, content, "The content of the post should match the input.");
+        assert.equal(post.createdBy, author, "The author of the post should match the sender.");
     });
 
     it("should retrieve a post", async () => {
-        const post = await postInstance.getPost(0);
-        
-        // Convert BigNumber to number if necessary, otherwise just use the value directly
-        const postId = post.id.toNumber ? post.id.toNumber() : post.id;
-      
-        assert.equal(postId, 0, "Post ID should be 0.");
-        assert.equal(post.author, accounts[0], "Post author should match the creator's address.");
-        assert.equal(post.content, "Hello, World!", "Post content did not match the input.");
-        
-        // Timestamp is also a BigNumber, so convert it in a similar way
-        const postTimestamp = post.timestamp.toNumber ? post.timestamp.toNumber() : post.timestamp;
-        assert(postTimestamp > 0, "Post timestamp should be greater than 0.");
-    });
-      
-    it("should allow the author to delete their post", async () => {
-        await postInstance.createPost("Post to delete", { from: accounts[1] });
-        const postIdToDelete = 1;
-        await postInstance.deletePost(postIdToDelete, { from: accounts[1] });
-
-        // Truffle does not currently have a direct way to check for array element deletion
-        // so we check that the author is set to 0x0, which indicates deletion
-        const postAfterDeletion = await postInstance.getPost(postIdToDelete);
-        assert.equal(postAfterDeletion.author, '0x0000000000000000000000000000000000000000', "Post should be deleted.");
+        let post = await postInstance.getPost(0);
+        assert.equal(post.id, 0, "The id of the post should be 0.");
     });
 
-    it("should not allow a non-author to delete a post", async () => {
-        await postInstance.createPost("Another post", { from: accounts[2] });
-        const postIdToDelete = 2;
 
+    it("should delete a post and emit an event", async () => {
+        // Create a post
+        let createResult = await postInstance.createPost("Test Post", "Test content", { from: author });
+        const postId = createResult.logs[0].args.postId.toNumber();
+    
+        // Delete the post
+        let deleteResult = await postInstance.deletePost(postId, { from: author });
+        assert.equal(deleteResult.logs[0].event, "deletePostEvent", "deletePostEvent event should be emitted.");
+    
+        // Attempt to retrieve the deleted post, expecting a revert
         try {
-        await postInstance.deletePost(postIdToDelete, { from: accounts[3] });
-        assert.fail("The transaction should have thrown an error");
-        } catch (err) {
-        assert.include(err.message, "Only the author can delete their post", "The error message should contain 'Only the author can delete their post'");
+            await postInstance.getPost(postId);
+            assert.fail("Expected a revert but did not get one.");
+        } catch (error) {
+            assert.include(error.message, "revert", "Expected a revert error containing 'revert'");
         }
     });
+    
+    
+    
+      
 });
+

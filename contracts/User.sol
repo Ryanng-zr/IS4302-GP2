@@ -44,4 +44,9 @@ contract User {
         delete users[msg.sender];
         emit deleteUserEvent(_userId);
     }
+
+    function checkVoterStatus(address userAddress) public view returns (bool) {
+        return users[userAddress].voter;
+    }
+
 }

@@ -10,5 +10,5 @@ module.exports = function (deployer) {
     .then(() => deployer.deploy(User))
     .then(() => deployer.deploy(MisinformationReport, Post.address))
     .then(() => deployer.deploy(Token))
-    .then(() => deployer.deploy(AcceptanceVoting, 48));
+    .then(() => deployer.deploy(AcceptanceVoting, User.address, 48));
 };

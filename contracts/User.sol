@@ -49,4 +49,7 @@ contract User {
         return users[userAddress].voter;
     }
 
+    function checkVoterStatus(address userAddress) public view returns (bool) {
+        return users[userAddress].voter;
+    }
 }

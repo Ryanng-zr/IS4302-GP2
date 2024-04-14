@@ -60,4 +60,8 @@ contract User {
         UserStruct storage user = users[msg.sender];
         user.voter = _voterStatus;
     }
+
+    function checkVoterStatus(address userAddress) public view returns (bool) {
+        return users[userAddress].voter;
+    }
 }

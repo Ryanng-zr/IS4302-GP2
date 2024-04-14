@@ -21,9 +21,7 @@ contract MisinformationReport {
     uint256 public nextReportId;
 
     event MisinformationReportCreated(uint256 indexed reportId, uint256 indexed postId, address reporter);
-    event MisinformationReportResolved(uint256 indexed reportId, bool isValid);
     event MisinformationReportUpdated(uint256 indexed reportId);
-    event FeePaid(address indexed verifier, uint256 amount);
     event MisinformationReportDeleted(uint256 indexed reportId);
 
     constructor(address _postContractAddress) {
@@ -57,7 +55,7 @@ contract MisinformationReport {
         report.status = _isValid ? VerificationStatusEnum.VERIFIED : VerificationStatusEnum.INVALID;
         report.verifier = _verifier;
 
-        emit MisinformationReportResolved(_reportId, _isValid);
+        emit MisinformationReportUpdated(_reportId);
     }
 
     function deleteMisinformationReport(uint256 _reportId) public {

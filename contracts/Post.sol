@@ -6,18 +6,18 @@ contract Post {
 
     struct PostStruct {
         uint256 id;
-        string title; // Added title per the ERD
+        string title;
         string content;
         uint256 createdAt;
         address createdBy;
-        VerificationStatus status; // Added status per the ERD
+        VerificationStatus status;
     }
 
     PostStruct[] public posts;
     uint256 public nextPostId;
 
-    event createPostEvent(uint256 indexed postId); // Event for post creation
-    event deletePostEvent(uint256 indexed postId); // Event for post deletion
+    event createPostEvent(uint256 indexed postId);
+    event deletePostEvent(uint256 indexed postId);
 
     function createPost(string memory _title, string memory _content) public {
         PostStruct memory newPost = PostStruct({
@@ -26,11 +26,11 @@ contract Post {
             content: _content,
             createdAt: block.timestamp,
             createdBy: msg.sender,
-            status: VerificationStatus.VOTING_IN_PROGRESS // Initial status set when post is created
+            status: VerificationStatus.VOTING_IN_PROGRESS
         });
 
         posts.push(newPost);
-        emit createPostEvent(nextPostId); // Emit the creation event
+        emit createPostEvent(nextPostId);
         nextPostId++;
     }
 
@@ -43,7 +43,7 @@ contract Post {
         require(_postId < posts.length, "Post does not exist.");
         require(posts[_postId].createdBy == msg.sender, "Only the author can delete their post.");
 
-        emit deletePostEvent(_postId); // Emit the deletion event before actual deletion
+        emit deletePostEvent(_postId);
         delete posts[_postId];
     }
 }

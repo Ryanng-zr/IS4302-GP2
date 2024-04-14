@@ -19,6 +19,11 @@ contract("MisinformationReport", accounts => {
         assert.equal(result.logs[0].event, "MisinformationReportCreated", "MisinformationReportCreated event should be emitted.");
         let report = await misinformationReportInstance.reports(0);
         assert.equal(report.justification, "Justification for the report", "The justification should match the input.");
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportCreated",
+          "MisinformationReportCreated event should be emitted."
+        );
     });
 
     it("should delete a misinformation report", async () => {
@@ -26,6 +31,12 @@ contract("MisinformationReport", accounts => {
         let reportId = result.logs[0].args.reportId.toNumber();
         
         await misinformationReportInstance.deleteMisinformationReport(reportId, { from: reporter });
+
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportDeleted",
+          "MisinformationReportCreated event should be emitted."
+        );
 
         let deletedReport = await misinformationReportInstance.reports(reportId);
 
@@ -46,6 +57,12 @@ contract("MisinformationReport", accounts => {
         assert.equal(report.status, 1, "Report should be in VOTING_IN_PROGRESS status.");
 
         await misinformationReportInstance.updateMisinformationReport(reportId, true, verifier, { from: verifier });
+
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportUpdated",
+          "MisinformationReportCreated event should be emitted."
+        );
 
         let updatedReport = await misinformationReportInstance.reports(reportId);
 

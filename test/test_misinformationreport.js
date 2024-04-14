@@ -9,53 +9,64 @@ contract("MisinformationReport", accounts => {
     before(async () => {
         postInstance = await Post.deployed();
         misinformationReportInstance = await MisinformationReport.deployed(postInstance.address);
+
+        await postInstance.createPost("Test Post Title", "Test Post Content", { from: reporter });
     });
 
     it("should allow adding a misinformation report", async () => {
-        // Create a dummy post first
-        await postInstance.createPost("Test Post Title", "Test Post Content", { from: reporter });
-        // Report the post as misinformation
         let result = await misinformationReportInstance.addMisinformationReport(0, "Justification for the report", { from: reporter });
         
-        // Check for event emission
         assert.equal(result.logs[0].event, "MisinformationReportCreated", "MisinformationReportCreated event should be emitted.");
-        // Check the report details
         let report = await misinformationReportInstance.reports(0);
         assert.equal(report.justification, "Justification for the report", "The justification should match the input.");
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportCreated",
+          "MisinformationReportCreated event should be emitted."
+        );
     });
 
     it("should delete a misinformation report", async () => {
-        // Logic to create a report first
         let result = await misinformationReportInstance.addMisinformationReport(0, "Justification for the report", { from: reporter });
         let reportId = result.logs[0].args.reportId.toNumber();
         
-        // Logic to delete the report
         await misinformationReportInstance.deleteMisinformationReport(reportId, { from: reporter });
-        
-        // Assertions to ensure the report is deleted
-        // This will need to be checked by trying to access the report and expecting a failure
-        // Since Solidity does not have a native "exists" check for deleted array elements, the logic might involve checking for default values or using a mapping
+
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportDeleted",
+          "MisinformationReportCreated event should be emitted."
+        );
+
+        let deletedReport = await misinformationReportInstance.reports(reportId);
+
+        assert.equal(deletedReport.reportId, 0, "Report ID should be 0 after deletion.");
+        assert.equal(deletedReport.postId, 0, "Post ID should be 0 after deletion.");
+        assert.equal(deletedReport.reporter, 0x0, "Reporter address should be 0x0 after deletion.");
+        assert.equal(deletedReport.justification, "", "Justification should be empty after deletion.");
+        assert.equal(deletedReport.timestamp, 0, "Timestamp should be 0 after deletion.");
+        assert.equal(deletedReport.status, 0, "Status should be 0 after deletion.");
+        assert.equal(deletedReport.verifier, 0x0, "Verifier address should be 0x0 after deletion.");
     });
 
-    // it("should resolve a misinformation report and pay a fee", async () => {
-    //     // Logic to create a post and report first
-    //     let result = await misinformationReportInstance.addMisinformationReport(0, "Justification for the report", { from: reporter });
-    //     let reportId = result.logs[0].args.reportId.toNumber();
+    it("should update a misinformation report", async () => {
+        let result = await misinformationReportInstance.addMisinformationReport(0, "Sample report", { from: reporter });
+        let reportId = result.logs[0].args.reportId.toNumber();
 
-    //     // Ensure the contract has enough ETH if needed
-    //     // Send ETH to the contract balance if required by the resolution logic
+        let report = await misinformationReportInstance.reports(reportId);
+        assert.equal(report.status, 1, "Report should be in VOTING_IN_PROGRESS status.");
 
-    //     // Resolve the report
-    //     try {
-    //         // Include { value: ... } if the contract needs to send ETH
-    //         const resolutionTx = await misinformationReportInstance.resolveMisinformationReport(reportId, true, verifier, { from: reporter });
-    //         // Check events emitted by the resolution transaction
-    //     } catch (error) {
-    //         assert.fail("Transaction should not revert: " + error.message);
-    //     }
-    // });
-    
-    
-    
+        await misinformationReportInstance.updateMisinformationReport(reportId, true, verifier, { from: verifier });
+
+        assert.equal(
+          result.logs[0].event,
+          "MisinformationReportUpdated",
+          "MisinformationReportCreated event should be emitted."
+        );
+
+        let updatedReport = await misinformationReportInstance.reports(reportId);
+
+        assert.equal(updatedReport.status, 2, "Report status should be VERIFIED.");
+    });
 });
 

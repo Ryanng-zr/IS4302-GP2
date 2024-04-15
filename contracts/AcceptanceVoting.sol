@@ -61,7 +61,7 @@ contract AcceptanceVoting {
     function addVoter(address userAddress) external {
         require(isRegistered[userAddress] != true, "You are already registered");
         registered.push(userAddress);
-        isRegistered[userAddress]== true;
+        isRegistered[userAddress] = true;
         isVoter[userAddress] = user.checkVoterStatus(userAddress);
         emit voter_added(userAddress);
     }
@@ -124,7 +124,10 @@ contract AcceptanceVoting {
             }
         }
     }
-    uint256 weightedScore = ((maliciousIntentScore*2) + (factualAccuracyScore*4) + (harmfulConsequencesScore*2) + contentManipulationScore + violationOfPlatformPoliciesScore)/100;
+
+    //NOTE: soldity dont support float - never / 100 
+    uint256 weightedScore = ((maliciousIntentScore*2) + (factualAccuracyScore*4) + (harmfulConsequencesScore*2) + contentManipulationScore + violationOfPlatformPoliciesScore);
+    //might not be completely accurate because float not supported 
     uint256 totalScore = weightedScore/noVoters;
 
     // TODO: add the different scenarios here

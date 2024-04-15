@@ -2,46 +2,67 @@
 pragma solidity ^0.8.0;
 
 contract User {
-    struct UserStruct {
-        string name;
-        string email;
-        bool voter;
+    address public owner;
+    uint256 public numUsers = 0;
+    
+    enum userGroup {
+        GENERAL,
+        VERIFIER,
+        DELETED
     }
 
-    mapping(address => UserStruct) public users;
+    struct user {
+        string name;
+        string email;
+        userGroup group;
+        address owner;
+    }
 
-    address public owner;
+    mapping(uint256 => user) public users;
 
-    uint256 public numUsers;
+    event UserAdded(uint256 userAddress, string name, string email);
+    event UserUpdated(uint256 userId, userGroup group);
+    event UserDeleted(string name, string email);
+    
+    modifier ownerOnly() {
+        require(msg.sender == owner, "Only contract owner can call this function");
+        _;
+    }
 
-    event createUserEvent(uint256 indexed userId);
-    event updateUserEvent(uint256 indexed userId);
-    event deleteUserEvent(uint256 indexed userId);
-
+    modifier validUserId(uint256 userId) {
+        require(userId < numUsers, "The user id is not valid");
+        _;
+    }
+    
     constructor() {
         owner = msg.sender; 
     }
 
-    function addUser(string memory _name, string memory _email) public returns (uint256) {
-        require(msg.sender == owner, "Only the owner can add users.");
-        numUsers++; 
-        users[msg.sender] = UserStruct(_name, _email, false); 
-        emit createUserEvent(numUsers);
-        return numUsers;
+    function addUser(string memory name, string memory email) public returns (uint256) {
+        require(bytes(name).length > 0, "User name cannot be empty");
+        require(bytes(email).length > 0, "User email cannot be empty");
+
+        uint256 userId = numUsers;
+        users[userId] = user(name, email, userGroup.GENERAL, msg.sender); 
+        numUsers++;
+        
+        emit UserAdded(userId, name, email);
+
+        return userId;
     }
 
-    function updateUser(uint256 _userId, string memory _newEmail) public {
-        require(msg.sender == owner, "Only the owner can update users.");
-        require(_userId <= numUsers && _userId > 0, "Invalid user ID.");
-        UserStruct storage user = users[msg.sender];
-        user.email = _newEmail;
-        emit updateUserEvent(_userId);
+    function updateUserType(uint256 userId, userGroup group) public ownerOnly validUserId(userId) {
+        users[userId].group = group;
+        emit UserUpdated(userId, group);
     }
 
-    function deleteUser(uint256 _userId) public {
-        require(msg.sender == owner, "Only the owner can delete users.");
-        require(_userId <= numUsers && _userId > 0, "Invalid user ID.");
-        delete users[msg.sender];
-        emit deleteUserEvent(_userId);
+    function deleteUser(uint256 userId) public ownerOnly validUserId(userId) {
+        user storage userToBeDeleted = users[userId];
+
+        require(userToBeDeleted.group != userGroup.DELETED, "User has already been deleted");
+        
+        userToBeDeleted.group = userGroup.DELETED;
+
+        emit UserDeleted(userToBeDeleted.name, userToBeDeleted.email);
     }
 }

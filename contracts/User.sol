@@ -65,4 +65,12 @@ contract User {
 
         emit UserDeleted(userToBeDeleted.name, userToBeDeleted.email);
     }
+
+    function getUserGroup(uint256 userId) public view returns (User.userGroup) {
+        return users[userId].group;
+    }
+
+    function getNumUsers() public view returns (uint256) {
+        return numUsers;
+    }
 }

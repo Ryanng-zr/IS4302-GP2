@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "./Post.sol";
 
 contract Report {
-    enum reportStatus { INVALID, VOTING_IN_PROGRESS, VERIFIED }
+    enum reportStatus { INVALID, VOTING_IN_PROGRESS, VERIFIED, DELETED }
 
     struct report {
         uint256 postId;
@@ -26,6 +26,7 @@ contract Report {
 
     event ReportAdded(uint256 reportId, uint256 postId, address reporter);
     event ReportUpdated(uint256 reportId, reportStatus status);
+    event ReportDeleted(uint256 reportId);
 
     modifier validReportId(uint256 reportId) {
         require(reportId < numReports, "The report id is not valid");
@@ -37,7 +38,8 @@ contract Report {
         _;
     }
 
-    function addReport(uint256 postId, string memory justification) public validPostId(postId) returns (uint256 reportId) {
+    function addReport(uint256 postId, string memory justification) public payable validPostId(postId) returns (uint256 reportId) {
+        require(msg.value >= 100000000000000, "Insufficient ether sent for adding report");
         require(bytes(justification).length > 0, "Report justification cannot be empty");
         
         report memory newReport = report(
@@ -60,6 +62,17 @@ contract Report {
     function updateReport(uint256 reportId, reportStatus newStatus) public validReportId(reportId) {
         reports[reportId].status = newStatus;
         emit ReportUpdated(reportId, newStatus);
+    }
+
+    function deleteReport(uint256 reportId) public validReportId(reportId) {
+        report storage reportToBeDeleted = reports[reportId];
+
+        require(msg.sender == reportToBeDeleted.reporter, "Only the owner can delete this report");
+        require(reportToBeDeleted.status != reportStatus.DELETED, "Report has already been deleted");
+   
+        reportToBeDeleted.status = reportStatus.DELETED;
+
+        emit ReportDeleted(reportId);
     }
 
     /* Getter Functions */

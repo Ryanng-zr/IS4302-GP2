@@ -9,15 +9,15 @@ contract Post {
         string title;
         string content;
         postStatus status;
-        uint256 createdAt;
-        address createdBy;
+        uint256 postedAt;
+        address poster;
     }
 
     uint256 public numPosts = 0;
 
     mapping(uint256 => post) public posts;
 
-    event PostAdded(uint256 postId, address createdBy, string title);
+    event PostAdded(uint256 postId, address postedBy, string title);
     event PostDeleted(string title, string content);
 
     modifier validPostId(uint256 postId) {
@@ -67,7 +67,7 @@ contract Post {
         uint256 userPostCount = 0;
 
         for (uint256 i = 0; i < numPosts; i++) {
-            if (posts[i].createdBy == userAddress) {
+            if (posts[i].poster == userAddress) {
                 userPosts[userPostCount] = encodePostToString(i);
                 userPostCount++;
             }
@@ -97,12 +97,12 @@ contract Post {
         return posts[postId].content;
     }
 
-    function getPostCreatedAt(uint256 postId) public view validPostId(postId) returns (uint256) {
-        return posts[postId].createdAt;
+    function getPostPostedAt(uint256 postId) public view validPostId(postId) returns (uint256) {
+        return posts[postId].postedAt;
     }
 
-    function getPostCreatedBy(uint256 postId) public view validPostId(postId) returns (address) {
-        return posts[postId].createdBy;
+    function getPostPoster(uint256 postId) public view validPostId(postId) returns (address) {
+        return posts[postId].poster;
     }
 
     /* Helper Functions */
@@ -141,10 +141,10 @@ contract Post {
                 postStatusToString(p.status),
                 "\n",
                 "Created At: ",
-                uint256ToString(p.createdAt),
+                uint256ToString(p.postedAt),
                 "\n",
                 "Created By: ",
-                addressToString(p.createdBy),
+                addressToString(p.poster),
                 "\n"
             )
         );

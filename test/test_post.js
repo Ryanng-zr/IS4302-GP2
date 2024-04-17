@@ -1,49 +1,104 @@
+const truffleAssert = require("truffle-assertions");
+const assert = require("assert");
+
 const Post = artifacts.require("../contracts/Post.sol");
 
-contract("Post", accounts => {
-    const [author] = accounts;
-    let postInstance;
+contract("Post Test", (accounts) => {
+  let postInstance;
 
-    before(async () => {
-        postInstance = await Post.deployed();
+  before(async () => {
+    postInstance = await Post.deployed();
+  });
+
+  it("Add Post", async () => {
+    let addPost = await postInstance.addPost("Test Title", "Test content", {
+      from: accounts[0],
     });
 
-    it("should create a post and emit an event", async () => {
-        let title = "Sample Title";
-        let content = "This is a sample content for testing purposes.";
-        let result = await postInstance.createPost(title, content, { from: author });
-        
-        assert.equal(result.logs[0].event, "createPostEvent", "createPostEvent event should be emitted.");
-        
-        let post = await postInstance.getPost(0);
-        assert.equal(post.title, title, "The title of the post should match the input.");
-        assert.equal(post.content, content, "The content of the post should match the input.");
-        assert.equal(post.createdBy, author, "The author of the post should match the sender.");
+    assert.notStrictEqual(addPost, undefined, "Failed to add post");
+    truffleAssert.eventEmitted(addPost, "PostAdded");
+
+    let postTitle = await postInstance.getPostTitle(0);
+    assert.strictEqual(
+      postTitle,
+      "Test Title",
+      "Post created with incorrect title"
+    );
+    let postContent = await postInstance.getPostContent(0);
+    assert.strictEqual(
+      postContent,
+      "Test content",
+      "Post created with incorrect content"
+    );
+  });
+
+  it("Incorrect Add Post", async () => {
+    truffleAssert.reverts(
+      postInstance.addPost("", "Test content", { from: accounts[0] }),
+      "Post title cannot be empty"
+    );
+
+    truffleAssert.reverts(
+      postInstance.addPost("Test title", "", { from: accounts[0] }),
+      "Post content cannot be empty"
+    );
+  });
+
+  it("View Post By Id", async () => {
+    await postInstance.addPost("Test Title", "Test content", {
+      from: accounts[0],
     });
 
-    it("should retrieve a post", async () => {
-        let post = await postInstance.getPost(0);
-        assert.equal(post.id, 0, "The id of the post should be 0.");
+    let postView = await postInstance.viewPostById(0, { from: accounts[0] });
+
+    let lines = postView.split("\n");
+    let id = lines[0];
+    let title = lines[1];
+    let content = lines[2];
+    let status = lines[3];
+
+    assert.strictEqual(id, "ID: 0");
+
+    assert.strictEqual(title, "Title: Test Title");
+
+    assert.strictEqual(content, "Content: Test content");
+
+    assert.strictEqual(status, "Status: VOTING IN PROGRESS");
+  });
+
+  it("View Post By User Address", async () => {
+    await postInstance.addPost("Test Title", "Test content", {
+      from: accounts[1],
     });
 
+    let postView = await postInstance.viewPostsByUserAddress(accounts[1], { from: accounts[1] });
 
-    it("should delete a post and emit an event", async () => {
-        let createResult = await postInstance.createPost("Test Post", "Test content", { from: author });
-        const postId = createResult.logs[0].args.postId.toNumber();
-    
-        let deleteResult = await postInstance.deletePost(postId, { from: author });
-        assert.equal(deleteResult.logs[0].event, "deletePostEvent", "deletePostEvent event should be emitted.");
-    
-        try {
-            await postInstance.getPost(postId);
-            assert.fail("Expected a revert but did not get one.");
-        } catch (error) {
-            assert.include(error.message, "revert", "Expected a revert error containing 'revert'");
-        }
+    let lines = postView.split("\n");
+    let id = lines[0];
+    let title = lines[1];
+    let content = lines[2];
+    let status = lines[3];
+
+    assert.strictEqual(id, "ID: 2");
+
+    assert.strictEqual(title, "Title: Test Title");
+
+    assert.strictEqual(content, "Content: Test content");
+
+    assert.strictEqual(status, "Status: VOTING IN PROGRESS");
+  });
+
+  it("Delete Post", async () => {
+    await postInstance.addPost("Test Title", "Test content", {
+      from: accounts[0],
     });
-    
-    
-    
-      
+
+    let deletePost = await postInstance.deletePost(0, { from: accounts[0] });
+    truffleAssert.eventEmitted(deletePost, "PostDeleted");
+
+    truffleAssert.reverts(
+      postInstance.deletePost(0, { from: accounts[0] }),
+      "Post has already been deleted"
+    );
+  });
 });
-

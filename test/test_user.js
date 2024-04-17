@@ -1,45 +1,55 @@
+const truffleAssert = require("truffle-assertions");
+var assert = require("assert");
+
 const User = artifacts.require("../contracts/User.sol");
-const ERC20 = artifacts.require("../contracts/ERC20.sol");
 
-contract("User", accounts => {
-    const [owner, user1] = accounts;
-    let userInstance; 
+contract("User Test", (accounts) => {
+  let userInstance;
 
-    before(async () => {
-      userInstance = await User.deployed();
+  before(async () => {
+    userInstance = await User.deployed();
+  });
+
+  it("Add User", async () => {
+    let addUser = await userInstance.addUser("Alice", "alice@example.com", {
+      from: accounts[0],
     });
 
-    it("should allow the owner to add a user", async () => {
-      await userInstance.addUser("Alice", "alice@example.com", { from: owner });
-      const user = await userInstance.users(owner);
-      assert.equal(user.name, "Alice", "The name of the first user should be Alice.");
-      assert.equal(user.email, "alice@example.com", "The email of the first user should be alice@example.com.");
-      assert.equal(user.voter, false, "The voter status of the first user should be false.");
+    assert.notStrictEqual(addUser, undefined, "Failed to add user");
+    truffleAssert.eventEmitted(addUser, "UserAdded");
+  });
+
+  it("Incorrect Add User", async () => {
+    truffleAssert.reverts(
+      userInstance.addUser("", "alice@example.com", { from: accounts[0] }),
+      "User name cannot be empty"
+    );
+
+    truffleAssert.reverts(
+      userInstance.addUser("Alice", "", { from: accounts[0] }),
+      "User email cannot be empty"
+    );
+  });
+
+  it("Update User Group", async () => {
+    await userInstance.addUser("Alice", "alice@example.com", {
+      from: accounts[0],
     });
 
-    it("should allow the owner to update a user's email", async () => {
-      await userInstance.updateUser(1, "alice@newdomain.com", { from: owner });
-      const user = await userInstance.users(owner);
-      assert.equal(user.email, "alice@newdomain.com", "The user's email should be updated to alice@newdomain.com.");
+    let updateUser = await userInstance.updateUserType(0, 1, {
+      from: accounts[0],
+    });
+    truffleAssert.eventEmitted(updateUser, "UserUpdated");
+  });
+
+  it("Delete User", async () => {
+    await userInstance.addUser("Alice", "alice@example.com", {
+      from: accounts[0],
     });
 
-    it("should not allow a non-owner to add a user", async () => {
-      try {
-        await userInstance.addUser("Bob", "bob@example.com", { from: user1 });
-        assert.fail("The transaction should have thrown an error.");
-      } catch (err) {
-        assert.include(err.message, "revert", "The error message should contain 'revert'.");
-      }
-    });
+    let deleteUser = await userInstance.deleteUser(0, { from: accounts[0] });
+    truffleAssert.eventEmitted(deleteUser, "UserDeleted");
 
-    it("should allow the owner to delete a user", async () => {
-      await userInstance.addUser("Test User", "test@email.com", { from: owner });
-      await userInstance.deleteUser(1, { from: owner });
-      
-      let user = await userInstance.users(owner);
-      assert.equal(user.name, '', "The user should be deleted.");
-    });
-
-
+    truffleAssert.reverts(userInstance.deleteUser(0, { from: accounts[0] }), 'User has already been deleted')
+  });
 });
-

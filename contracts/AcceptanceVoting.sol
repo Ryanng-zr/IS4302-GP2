@@ -15,10 +15,10 @@ contract AcceptanceVoting {
         VoteTypeEnum vote;
     }
     
-    address[] registered;
-    mapping(address => bool) isRegistered;
-    mapping(address => bool) isVoter;
-    mapping(address => bool) placedVotes;
+    uint256[] registered;
+    mapping(uint256 => bool) isRegistered;
+    mapping(uint256 => bool) isVoter;
+    mapping(uint256 => bool) placedVotes;
 
     // TODO: Should we keep a record of who voted what or just the result? - to add in ERD 
     uint256 factualAccuracyScore = 0; 
@@ -27,20 +27,15 @@ contract AcceptanceVoting {
     uint256 contentManipulationScore = 0;
     uint256 violationOfPlatformPoliciesScore = 0;
 
-    // mapping(address => bool) factualAccuracyVotes;
-    // mapping(address => bool) maliciousIntentVotes;
-    // mapping(address => bool) harmfulConsequencesVotes;
-    // mapping(address => bool) violationOfPlatformPoliciesVotes;
-
     //TODO: need token? misinformation report to instantiate acceptancevoting? 
     uint256 votingTimeframe; 
     User user;
 
     //EVENTS  
-    event voter_added (address userAddress);
+    event voter_added (uint256 userId);
     event vote_open (uint256 timestamp);
     event voted (
-        address userAddress,
+        uint256 userId,
         bool factualAccuracy,
         bool maliciousIntent,
         bool harmfulConsequences,
@@ -48,46 +43,46 @@ contract AcceptanceVoting {
         bool violationOfPlatformPolicies
     );
     event vote_closed (uint256 timestamp);
-    event pay_fee (address userAddress, uint256 userId);
-    event fee_distributed (address userAddress, uint256 distributedAmount);
+    event pay_fee (uint256 userId, uint256 amt);
+    event fee_distributed (uint256 userId, uint256 distributedAmount);
 
-    //CONSTRUCTOR 
-    constructor(User _user, uint256 timeFrame) {
-        votingTimeframe = timeFrame;
+    constructor(User _user) {
         user = _user;
     }
 
     //METHODS 
-    function addVoter(address userAddress) external {
-        require(isRegistered[userAddress] != true, "You are already registered");
-        registered.push(userAddress);
-        isRegistered[userAddress] = true;
-        isVoter[userAddress] = user.checkVoterStatus(userAddress);
-        emit voter_added(userAddress);
+    function addVoter(uint256 userId) external {
+        require(isRegistered[userId] != true, "You are already registered");
+        require(user.getNumUsers() >= userId, "User ID does not exist");
+        registered.push(userId);
+        isRegistered[userId] = true;
+        isVoter[userId] = (user.getUserGroup(userId) == User.userGroup.VERIFIER);
+        emit voter_added(userId);
     }
 
     // TODO: should use userAddress passed in params or msg.sender ???
     function vote (
-        address userAddress,
+        uint256 userId,
         bool factualAccuracy,
         bool maliciousIntent,
         bool contentManipulation,
         bool harmfulConsequences,
         bool violationOfPlatformPolicies
     ) public {
-        require(isRegistered[userAddress], "You are have not registered");
+        require(isRegistered[userId], "You are have not registered");
+        require(user.getNumUsers() >= userId, "User ID does not exist");
         require(
-         placedVotes[userAddress] != true,
+         placedVotes[userId] != true,
         "You can only vote once."
         );
 
         uint256 multiplier = 1; 
 
-        if(isVoter[userAddress]) {
+        if(isVoter[userId]) {
             multiplier = 3;
         }
 
-        placedVotes[userAddress] = true;
+        placedVotes[userId] = true;
         if(factualAccuracy) {
             factualAccuracyScore += multiplier;
         } 
@@ -103,17 +98,12 @@ contract AcceptanceVoting {
         if(violationOfPlatformPolicies) {
             violationOfPlatformPoliciesScore += multiplier;
         }
-        //if use mapping instead - 
-        // factualAccuracyVotes[userAddress] = factualAccuracy;
-        // maliciousIntentVotes[userAddress] = maliciousIntent;
-        // harmfulConsequencesVotes[userAddress] = harmfulConsequences;
-        // violationOfPlatformPoliciesVotes[userAddress] = violationOfPlatformPolicies;
 
-        emit voted(userAddress, factualAccuracy, maliciousIntent, harmfulConsequences, contentManipulation, violationOfPlatformPolicies);
+        emit voted(userId, factualAccuracy, maliciousIntent, harmfulConsequences, contentManipulation, violationOfPlatformPolicies);
   }
 
     // TODO: add requirement - need voting closed?
-  function calculateResultBasedOnRegularWeightage () public {
+  function calculateResultBasedOnRegularWeightage () view public returns(uint256){
     uint256 noVoters = 0;
     for (uint256 i=0; i<registered.length; i++) {
         if(placedVotes[registered[i]]) {
@@ -130,8 +120,18 @@ contract AcceptanceVoting {
     //might not be completely accurate because float not supported 
     uint256 totalScore = weightedScore/noVoters;
 
+    return totalScore;
+
     // TODO: add the different scenarios here
 
+  }
+
+  function getRegisteredLength() public view returns(uint256) {
+    return registered.length;
+  }
+
+  function getHarmfulConsequencesScore() public view returns(uint256) {
+    return harmfulConsequencesScore;
   }
 
 }

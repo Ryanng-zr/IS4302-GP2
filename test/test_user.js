@@ -1,5 +1,4 @@
 const truffleAssert = require("truffle-assertions");
-const BigNumber = require("bignumber.js");
 var assert = require("assert");
 
 const User = artifacts.require("../contracts/User.sol");

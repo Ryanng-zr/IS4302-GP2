@@ -69,8 +69,7 @@ contract AcceptanceVoting {
         bool harmfulConsequences,
         bool violationOfPlatformPolicies
     ) public {
-        require(isRegistered[userId], "You are have not registered");
-        require(user.getNumUsers() >= userId, "User ID does not exist");
+        require(isRegistered[userId], "You have not registered");
         require(
          placedVotes[userId] != true,
         "You can only vote once."
@@ -132,6 +131,10 @@ contract AcceptanceVoting {
 
   function getHarmfulConsequencesScore() public view returns(uint256) {
     return harmfulConsequencesScore;
+  }
+
+  function getFactualAccuracyScore() public view returns(uint256) {
+    return factualAccuracyScore;
   }
 
 }

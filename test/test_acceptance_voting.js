@@ -12,7 +12,7 @@ contract('AcceptanceVoting', (accounts) => {
     acceptanceVotingInstance = await AcceptanceVoting.deployed();
   });
 
-  it('should allow adding of voter', async () => {
+  it('Add Voter', async () => {
     // user id = 0
     await userInstance.addUser('Alice', 'alice@example.com', {
       from: accounts[0],
@@ -31,20 +31,16 @@ contract('AcceptanceVoting', (accounts) => {
       from: accounts[0],
     });
 
-    await acceptanceVotingInstance.addVoter(1, {
-      from: accounts[1],
-    });
-
     truffleAssert.eventEmitted(result, 'voter_added');
 
     length = await acceptanceVotingInstance.getRegisteredLength();
 
-    assert.strictEqual(length.words[0], 2, 'Add Voters doesnt work');
+    assert.strictEqual(length.words[0], 1, 'Add Voters doesnt work');
 
     //voter already registered
     await truffleAssert.reverts(
-      acceptanceVotingInstance.addVoter(1, {
-        from: accounts[1],
+      acceptanceVotingInstance.addVoter(0, {
+        from: accounts[0],
       }),
       'You are already registered',
     );
@@ -52,13 +48,21 @@ contract('AcceptanceVoting', (accounts) => {
     //user id dont exist
     await truffleAssert.reverts(
       acceptanceVotingInstance.addVoter(3, {
-        from: accounts[3],
+        from: accounts[2],
       }),
       'User ID does not exist',
     );
   });
 
-  it('can vote', async () => {
+  it('Vote and Vote Calculation', async () => {
+    await truffleAssert.reverts(
+      acceptanceVotingInstance.vote(1, false, false, false, true, true, {
+        from: accounts[1],
+      }),
+      'You have not registered',
+    );
+
+    //
     // factualAccuracy - 1, maliciousIntent - 1, contentManipulation - 0, harmfulConsequences - 0, violationOfPlatformPolicies - 0
     let vote1 = await acceptanceVotingInstance.vote(
       0,
@@ -71,6 +75,21 @@ contract('AcceptanceVoting', (accounts) => {
     );
     truffleAssert.eventEmitted(vote1, 'voted');
 
+    let fscore = await acceptanceVotingInstance.getFactualAccuracyScore();
+
+    assert.strictEqual(
+      fscore.words[0],
+      1,
+      'Factual accuracy score was counted wrongly!',
+    );
+
+    await truffleAssert.reverts(
+      acceptanceVotingInstance.vote(0, true, true, false, false, false, {
+        from: accounts[0],
+      }),
+      'You can only vote once.',
+    );
+
     // total scores: factualAccuracy - 1, maliciousIntent - 1, contentManipulation - 0, harmfulConsequences - 0, violationOfPlatformPolicies - 0
     //((maliciousIntentScore*2) + (factualAccuracyScore*4) + (harmfulConsequencesScore*2) + contentManipulationScore + violationOfPlatformPoliciesScore)
     // calculated score: 6/1
@@ -82,6 +101,10 @@ contract('AcceptanceVoting', (accounts) => {
       6,
       'calculateResultBasedOnRegularWeightage is calculated wrongly!',
     );
+
+    await acceptanceVotingInstance.addVoter(1, {
+      from: accounts[1],
+    });
 
     // factualAccuracy - 0, maliciousIntent - 0, contentManipulation - 0, harmfulConsequences - 3, violationOfPlatformPolicies - 3
     let vote2 = await acceptanceVotingInstance.vote(

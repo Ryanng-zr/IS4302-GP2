@@ -263,7 +263,6 @@ contract AcceptanceVoting {
         emit vote_close(reportId, block.number);
     }
 
-    // complete this function
     function distributeFee(uint256 reportId) public payable {
         require(isConcluded[reportId] == true, "Voting has not concluded");
 
@@ -275,7 +274,10 @@ contract AcceptanceVoting {
             }
         }
 
+        require(numberOfVoters > 0, "No voters for this report");
+
         uint256 reward = (((potOfMoney * 12) / 10) * 1E18) / numberOfVoters;
+
         for (uint256 j = 0; j < voters.length; j++) {
             if (hasVoted[voters[j]][reportId]) {
                 address payable recipient = payable(voters[j]);
@@ -311,5 +313,9 @@ contract AcceptanceVoting {
 
     function checkConcluded(uint256 reportId) public view returns (bool) {
         return isConcluded[reportId];
+    }
+
+    function checkIfVoter(address user) public view returns (bool) {
+        return isVoter[user];
     }
 }

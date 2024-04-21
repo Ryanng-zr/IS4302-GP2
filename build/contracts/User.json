@@ -653,7 +653,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_userGroup_$836",
+                      "name": "validator_revert_t_enum$_userGroup_$849",
                       "nodeType": "YulIdentifier",
                       "src": "615:39:2"
                     },
@@ -665,7 +665,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_userGroup_$836",
+            "name": "abi_decode_t_enum$_userGroup_$849",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1997,7 +1997,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_userGroup_$836",
+                          "name": "abi_decode_t_enum$_userGroup_$849",
                           "nodeType": "YulIdentifier",
                           "src": "2636:33:2"
                         },
@@ -2016,7 +2016,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_uint256t_enum$_userGroup_$836",
+            "name": "abi_decode_tuple_t_uint256t_enum$_userGroup_$849",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -2131,7 +2131,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_userGroup_$836_to_t_uint8",
+                          "name": "convert_t_enum$_userGroup_$849_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "2947:41:2"
                         },
@@ -2152,7 +2152,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack",
+            "name": "abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -3855,7 +3855,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "6417:54:2"
                     },
@@ -3867,7 +3867,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_enum$_userGroup_$836__to_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_enum$_userGroup_$849__to_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -4147,7 +4147,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "7097:54:2"
                     },
@@ -4202,7 +4202,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_enum$_userGroup_$836_t_address__to_t_string_memory_ptr_t_string_memory_ptr_t_uint8_t_address__fromStack_reversed",
+            "name": "abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_enum$_userGroup_$849_t_address__to_t_string_memory_ptr_t_string_memory_ptr_t_uint8_t_address__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -5461,7 +5461,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "10400:54:2"
                     },
@@ -5473,7 +5473,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_uint256_t_enum$_userGroup_$836__to_t_uint256_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_uint256_t_enum$_userGroup_$849__to_t_uint256_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6512,7 +6512,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_assert_t_enum$_userGroup_$836",
+                      "name": "validator_assert_t_enum$_userGroup_$849",
                       "nodeType": "YulIdentifier",
                       "src": "12367:39:2"
                     },
@@ -6524,7 +6524,7 @@
                 }
               ]
             },
-            "name": "cleanup_t_enum$_userGroup_$836",
+            "name": "cleanup_t_enum$_userGroup_$849",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6665,7 +6665,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "cleanup_t_enum$_userGroup_$836",
+                      "name": "cleanup_t_enum$_userGroup_$849",
                       "nodeType": "YulIdentifier",
                       "src": "12734:30:2"
                     },
@@ -6682,7 +6682,7 @@
                 }
               ]
             },
-            "name": "convert_t_enum$_userGroup_$836_to_t_uint8",
+            "name": "convert_t_enum$_userGroup_$849_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7975,7 +7975,7 @@
                 }
               ]
             },
-            "name": "validator_assert_t_enum$_userGroup_$836",
+            "name": "validator_assert_t_enum$_userGroup_$849",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8168,7 +8168,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_userGroup_$836",
+            "name": "validator_revert_t_enum$_userGroup_$849",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8283,7 +8283,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_userGroup_$836(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_userGroup_$836(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256t_enum$_userGroup_$836(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_userGroup_$836(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_userGroup_$836_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    // string -> string\n    function abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value, pos) -> ret {\n        let slotValue := sload(value)\n        let length := extract_byte_array_length(slotValue)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        switch and(slotValue, 1)\n        case 0 {\n            // short byte array\n            mstore(pos, and(slotValue, not(0xff)))\n            ret := add(pos, 0x20)\n        }\n        case 1 {\n            // long byte array\n            let dataPos := array_dataslot_t_string_storage(value)\n            let i := 0\n            for { } lt(i, length) { i := add(i, 0x20) } {\n                mstore(add(pos, i), sload(dataPos))\n                dataPos := add(dataPos, 1)\n            }\n            ret := add(pos, i)\n        }\n    }\n\n    function abi_encode_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n\n        mstore(add(pos, 0), \"User name cannot be empty\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 42)\n\n        mstore(add(pos, 0), \"Only contract owner can call thi\")\n\n        mstore(add(pos, 32), \"s function\")\n\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 29)\n\n        mstore(add(pos, 0), \"User has already been deleted\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 24)\n\n        mstore(add(pos, 0), \"The user id is not valid\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 26)\n\n        mstore(add(pos, 0), \"User email cannot be empty\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_enum$_userGroup_$836__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_enum$_userGroup_$836_t_address__to_t_string_memory_ptr_t_string_memory_ptr_t_uint8_t_address__fromStack_reversed(headStart , value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 128)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_address_to_t_address_fromStack(value3,  add(headStart, 96))\n\n    }\n\n    function abi_encode_tuple_t_string_storage_t_string_storage__to_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_enum$_userGroup_$836__to_t_uint256_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_userGroup_$836_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_string_memory_ptr_t_string_memory_ptr__to_t_uint256_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_string_storage(ptr) -> data {\n        data := ptr\n\n        mstore(0, ptr)\n        data := keccak256(0, 0x20)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_userGroup_$836(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_userGroup_$836(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_enum$_userGroup_$836_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_userGroup_$836(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function increment_t_uint256(value) -> ret {\n        value := cleanup_t_uint256(value)\n        if eq(value, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) { panic_error_0x11() }\n        ret := add(value, 1)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_userGroup_$836(value) {\n        if iszero(lt(value, 3)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_userGroup_$836(value) {\n        if iszero(lt(value, 3)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
+      "contents": "{\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocateMemory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert(0, 0) }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_t_enum$_userGroup_$849(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_userGroup_$849(value)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert(0, 0) }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptrt_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert(0, 0) }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_uint256t_enum$_userGroup_$849(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert(0, 0) }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_enum$_userGroup_$849(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_userGroup_$849_to_t_uint8(value))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    // string -> string\n    function abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value, pos) -> ret {\n        let slotValue := sload(value)\n        let length := extract_byte_array_length(slotValue)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        switch and(slotValue, 1)\n        case 0 {\n            // short byte array\n            mstore(pos, and(slotValue, not(0xff)))\n            ret := add(pos, 0x20)\n        }\n        case 1 {\n            // long byte array\n            let dataPos := array_dataslot_t_string_storage(value)\n            let i := 0\n            for { } lt(i, length) { i := add(i, 0x20) } {\n                mstore(add(pos, i), sload(dataPos))\n                dataPos := add(dataPos, 1)\n            }\n            ret := add(pos, i)\n        }\n    }\n\n    function abi_encode_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n\n        mstore(add(pos, 0), \"User name cannot be empty\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 42)\n\n        mstore(add(pos, 0), \"Only contract owner can call thi\")\n\n        mstore(add(pos, 32), \"s function\")\n\n        end := add(pos, 64)\n    }\n\n    function abi_encode_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 29)\n\n        mstore(add(pos, 0), \"User has already been deleted\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 24)\n\n        mstore(add(pos, 0), \"The user id is not valid\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 26)\n\n        mstore(add(pos, 0), \"User email cannot be empty\")\n\n        end := add(pos, 32)\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_enum$_userGroup_$849__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr_t_string_memory_ptr_t_enum$_userGroup_$849_t_address__to_t_string_memory_ptr_t_string_memory_ptr_t_uint8_t_address__fromStack_reversed(headStart , value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 128)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_address_to_t_address_fromStack(value3,  add(headStart, 96))\n\n    }\n\n    function abi_encode_tuple_t_string_storage_t_string_storage__to_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_storage_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_3efa83867549fa88daf65f85eeea1bf75ea7f0663d34a5b9f34cb5d407b56192_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9f404bf3dfdb93f78ecbbef8ec8a2ab1ff0c0c282dbf173dce8fa906325bb814_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_affdbcdaff85d7928fc4526bcf025d0dcb2f4077fc3d37e11b3d32560c932d14_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_f01d11f1db4eceeb8109ef3b03fbd3fd9c13ec422cf38c642f20817c68b74e05_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_f18143dd865d6a4e1904dff3d160fcc90350240f2a34d2ccedeac77238870354_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_enum$_userGroup_$849__to_t_uint256_t_uint8__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_enum$_userGroup_$849_to_t_uint8_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_string_memory_ptr_t_string_memory_ptr__to_t_uint256_t_string_memory_ptr_t_string_memory_ptr__fromStack_reversed(headStart , value2, value1, value0) -> tail {\n        tail := add(headStart, 96)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        mstore(add(headStart, 32), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value1,  tail)\n\n        mstore(add(headStart, 64), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value2,  tail)\n\n    }\n\n    function allocateMemory(size) -> memPtr {\n        memPtr := mload(64)\n        let newFreePtr := add(memPtr, size)\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        // round up\n        size := and(add(length, 0x1f), not(0x1f))\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function array_dataslot_t_string_storage(ptr) -> data {\n        data := ptr\n\n        mstore(0, ptr)\n        data := keccak256(0, 0x20)\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function cleanup_t_enum$_userGroup_$849(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_userGroup_$849(value)\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function convert_t_enum$_userGroup_$849_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_userGroup_$849(value)\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function increment_t_uint256(value) -> ret {\n        value := cleanup_t_uint256(value)\n        if eq(value, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) { panic_error_0x11() }\n        ret := add(value, 1)\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function validator_assert_t_enum$_userGroup_$849(value) {\n        if iszero(lt(value, 3)) { panic_error_0x21() }\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function validator_revert_t_enum$_userGroup_$849(value) {\n        if iszero(lt(value, 3)) { revert(0, 0) }\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n}\n",
       "id": 2,
       "language": "Yul",
       "name": "#utility.yul"
@@ -8297,15 +8297,15 @@
     "absolutePath": "project:/contracts/User.sol",
     "exportedSymbols": {
       "User": [
-        1084
+        1097
       ]
     },
-    "id": 1085,
+    "id": 1098,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 827,
+        "id": 840,
         "literals": [
           "solidity",
           "^",
@@ -8321,9 +8321,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 1084,
+        "id": 1097,
         "linearizedBaseContracts": [
-          1084
+          1097
         ],
         "name": "User",
         "nodeType": "ContractDefinition",
@@ -8331,11 +8331,11 @@
           {
             "constant": false,
             "functionSelector": "8da5cb5b",
-            "id": 829,
+            "id": 842,
             "mutability": "mutable",
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 1084,
+            "scope": 1097,
             "src": "77:20:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -8344,7 +8344,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 828,
+              "id": 841,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "77:7:1",
@@ -8359,11 +8359,11 @@
           {
             "constant": false,
             "functionSelector": "19a50f49",
-            "id": 832,
+            "id": 845,
             "mutability": "mutable",
             "name": "numUsers",
             "nodeType": "VariableDeclaration",
-            "scope": 1084,
+            "scope": 1097,
             "src": "103:27:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -8372,7 +8372,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 830,
+              "id": 843,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "103:7:1",
@@ -8383,7 +8383,7 @@
             },
             "value": {
               "hexValue": "30",
-              "id": 831,
+              "id": 844,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -8401,22 +8401,22 @@
           },
           {
             "canonicalName": "User.userGroup",
-            "id": 836,
+            "id": 849,
             "members": [
               {
-                "id": 833,
+                "id": 846,
                 "name": "GENERAL",
                 "nodeType": "EnumValue",
                 "src": "162:7:1"
               },
               {
-                "id": 834,
+                "id": 847,
                 "name": "VERIFIER",
                 "nodeType": "EnumValue",
                 "src": "179:8:1"
               },
               {
-                "id": 835,
+                "id": 848,
                 "name": "DELETED",
                 "nodeType": "EnumValue",
                 "src": "197:7:1"
@@ -8428,15 +8428,15 @@
           },
           {
             "canonicalName": "User.user",
-            "id": 846,
+            "id": 859,
             "members": [
               {
                 "constant": false,
-                "id": 838,
+                "id": 851,
                 "mutability": "mutable",
                 "name": "name",
                 "nodeType": "VariableDeclaration",
-                "scope": 846,
+                "scope": 859,
                 "src": "238:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8445,7 +8445,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 837,
+                  "id": 850,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "238:6:1",
@@ -8458,11 +8458,11 @@
               },
               {
                 "constant": false,
-                "id": 840,
+                "id": 853,
                 "mutability": "mutable",
                 "name": "email",
                 "nodeType": "VariableDeclaration",
-                "scope": 846,
+                "scope": 859,
                 "src": "259:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8471,7 +8471,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 839,
+                  "id": 852,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "259:6:1",
@@ -8484,32 +8484,32 @@
               },
               {
                 "constant": false,
-                "id": 843,
+                "id": 856,
                 "mutability": "mutable",
                 "name": "group",
                 "nodeType": "VariableDeclaration",
-                "scope": 846,
+                "scope": 859,
                 "src": "281:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_userGroup_$836",
+                  "typeIdentifier": "t_enum$_userGroup_$849",
                   "typeString": "enum User.userGroup"
                 },
                 "typeName": {
-                  "id": 842,
+                  "id": 855,
                   "nodeType": "UserDefinedTypeName",
                   "pathNode": {
-                    "id": 841,
+                    "id": 854,
                     "name": "userGroup",
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 836,
+                    "referencedDeclaration": 849,
                     "src": "281:9:1"
                   },
-                  "referencedDeclaration": 836,
+                  "referencedDeclaration": 849,
                   "src": "281:9:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_userGroup_$836",
+                    "typeIdentifier": "t_enum$_userGroup_$849",
                     "typeString": "enum User.userGroup"
                   }
                 },
@@ -8517,11 +8517,11 @@
               },
               {
                 "constant": false,
-                "id": 845,
+                "id": 858,
                 "mutability": "mutable",
                 "name": "owner",
                 "nodeType": "VariableDeclaration",
-                "scope": 846,
+                "scope": 859,
                 "src": "306:13:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -8530,7 +8530,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 844,
+                  "id": 857,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "306:7:1",
@@ -8545,29 +8545,29 @@
             ],
             "name": "user",
             "nodeType": "StructDefinition",
-            "scope": 1084,
+            "scope": 1097,
             "src": "216:110:1",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "365b98b2",
-            "id": 851,
+            "id": 864,
             "mutability": "mutable",
             "name": "users",
             "nodeType": "VariableDeclaration",
-            "scope": 1084,
+            "scope": 1097,
             "src": "332:37:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
               "typeString": "mapping(uint256 => struct User.user)"
             },
             "typeName": {
-              "id": 850,
+              "id": 863,
               "keyType": {
-                "id": 847,
+                "id": 860,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "340:7:1",
@@ -8579,23 +8579,23 @@
               "nodeType": "Mapping",
               "src": "332:24:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                 "typeString": "mapping(uint256 => struct User.user)"
               },
               "valueType": {
-                "id": 849,
+                "id": 862,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 848,
+                  "id": 861,
                   "name": "user",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 846,
+                  "referencedDeclaration": 859,
                   "src": "351:4:1"
                 },
-                "referencedDeclaration": 846,
+                "referencedDeclaration": 859,
                 "src": "351:4:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                  "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                   "typeString": "struct User.user"
                 }
               }
@@ -8605,22 +8605,22 @@
           {
             "constant": false,
             "functionSelector": "6bf693c4",
-            "id": 856,
+            "id": 869,
             "mutability": "mutable",
             "name": "usersByAddress",
             "nodeType": "VariableDeclaration",
-            "scope": 1084,
+            "scope": 1097,
             "src": "375:46:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$846_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$859_storage_$",
               "typeString": "mapping(address => struct User.user)"
             },
             "typeName": {
-              "id": 855,
+              "id": 868,
               "keyType": {
-                "id": 852,
+                "id": 865,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "383:7:1",
@@ -8632,23 +8632,23 @@
               "nodeType": "Mapping",
               "src": "375:24:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$846_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$859_storage_$",
                 "typeString": "mapping(address => struct User.user)"
               },
               "valueType": {
-                "id": 854,
+                "id": 867,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 853,
+                  "id": 866,
                   "name": "user",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 846,
+                  "referencedDeclaration": 859,
                   "src": "394:4:1"
                 },
-                "referencedDeclaration": 846,
+                "referencedDeclaration": 859,
                 "src": "394:4:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                  "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                   "typeString": "struct User.user"
                 }
               }
@@ -8657,21 +8657,21 @@
           },
           {
             "anonymous": false,
-            "id": 864,
+            "id": 877,
             "name": "UserAdded",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 863,
+              "id": 876,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 858,
+                  "id": 871,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 864,
+                  "scope": 877,
                   "src": "444:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8680,7 +8680,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 857,
+                    "id": 870,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "444:7:1",
@@ -8693,12 +8693,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 860,
+                  "id": 873,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 864,
+                  "scope": 877,
                   "src": "465:11:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8707,7 +8707,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 859,
+                    "id": 872,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "465:6:1",
@@ -8720,12 +8720,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 862,
+                  "id": 875,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "email",
                   "nodeType": "VariableDeclaration",
-                  "scope": 864,
+                  "scope": 877,
                   "src": "478:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8734,7 +8734,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 861,
+                    "id": 874,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "478:6:1",
@@ -8752,21 +8752,21 @@
           },
           {
             "anonymous": false,
-            "id": 871,
+            "id": 884,
             "name": "UserUpdated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 870,
+              "id": 883,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 866,
+                  "id": 879,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "userId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 871,
+                  "scope": 884,
                   "src": "515:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8775,7 +8775,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 865,
+                    "id": 878,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "515:7:1",
@@ -8788,33 +8788,33 @@
                 },
                 {
                   "constant": false,
-                  "id": 869,
+                  "id": 882,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "group",
                   "nodeType": "VariableDeclaration",
-                  "scope": 871,
+                  "scope": 884,
                   "src": "531:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_userGroup_$836",
+                    "typeIdentifier": "t_enum$_userGroup_$849",
                     "typeString": "enum User.userGroup"
                   },
                   "typeName": {
-                    "id": 868,
+                    "id": 881,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 867,
+                      "id": 880,
                       "name": "userGroup",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 836,
+                      "referencedDeclaration": 849,
                       "src": "531:9:1"
                     },
-                    "referencedDeclaration": 836,
+                    "referencedDeclaration": 849,
                     "src": "531:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
@@ -8827,21 +8827,21 @@
           },
           {
             "anonymous": false,
-            "id": 877,
+            "id": 890,
             "name": "UserDeleted",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 876,
+              "id": 889,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 873,
+                  "id": 886,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 877,
+                  "scope": 890,
                   "src": "571:11:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8850,7 +8850,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 872,
+                    "id": 885,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "571:6:1",
@@ -8863,12 +8863,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 875,
+                  "id": 888,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "email",
                   "nodeType": "VariableDeclaration",
-                  "scope": 877,
+                  "scope": 890,
                   "src": "584:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8877,7 +8877,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 874,
+                    "id": 887,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "584:6:1",
@@ -8895,7 +8895,7 @@
           },
           {
             "body": {
-              "id": 888,
+              "id": 901,
               "nodeType": "Block",
               "src": "625:136:1",
               "statements": [
@@ -8907,14 +8907,14 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 883,
+                        "id": 896,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 880,
+                            "id": 893,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -8925,7 +8925,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 881,
+                          "id": 894,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -8941,11 +8941,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": "==",
                         "rightExpression": {
-                          "id": 882,
+                          "id": 895,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 829,
+                          "referencedDeclaration": 842,
                           "src": "670:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -8960,7 +8960,7 @@
                       },
                       {
                         "hexValue": "4f6e6c7920636f6e7472616374206f776e65722063616e2063616c6c20746869732066756e6374696f6e",
-                        "id": 884,
+                        "id": 897,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -8986,7 +8986,7 @@
                           "typeString": "literal_string \"Only contract owner can call this function\""
                         }
                       ],
-                      "id": 879,
+                      "id": 892,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9000,7 +9000,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 885,
+                    "id": 898,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9015,22 +9015,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 886,
+                  "id": 899,
                   "nodeType": "ExpressionStatement",
                   "src": "635:108:1"
                 },
                 {
-                  "id": 887,
+                  "id": 900,
                   "nodeType": "PlaceholderStatement",
                   "src": "753:1:1"
                 }
               ]
             },
-            "id": 889,
+            "id": 902,
             "name": "ownerOnly",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 878,
+              "id": 891,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "622:2:1"
@@ -9041,7 +9041,7 @@
           },
           {
             "body": {
-              "id": 901,
+              "id": 914,
               "nodeType": "Block",
               "src": "804:82:1",
               "statements": [
@@ -9053,17 +9053,17 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 896,
+                        "id": 909,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 894,
+                          "id": 907,
                           "name": "userId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 891,
+                          "referencedDeclaration": 904,
                           "src": "822:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -9073,11 +9073,11 @@
                         "nodeType": "BinaryOperation",
                         "operator": "<",
                         "rightExpression": {
-                          "id": 895,
+                          "id": 908,
                           "name": "numUsers",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 832,
+                          "referencedDeclaration": 845,
                           "src": "831:8:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -9092,7 +9092,7 @@
                       },
                       {
                         "hexValue": "5468652075736572206964206973206e6f742076616c6964",
-                        "id": 897,
+                        "id": 910,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9118,7 +9118,7 @@
                           "typeString": "literal_string \"The user id is not valid\""
                         }
                       ],
-                      "id": 893,
+                      "id": 906,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9132,7 +9132,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 898,
+                    "id": 911,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9147,31 +9147,31 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 899,
+                  "id": 912,
                   "nodeType": "ExpressionStatement",
                   "src": "814:54:1"
                 },
                 {
-                  "id": 900,
+                  "id": 913,
                   "nodeType": "PlaceholderStatement",
                   "src": "878:1:1"
                 }
               ]
             },
-            "id": 902,
+            "id": 915,
             "name": "validUserId",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 892,
+              "id": 905,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 891,
+                  "id": 904,
                   "mutability": "mutable",
                   "name": "userId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 902,
+                  "scope": 915,
                   "src": "788:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -9180,7 +9180,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 890,
+                    "id": 903,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "788:7:1",
@@ -9200,23 +9200,23 @@
           },
           {
             "body": {
-              "id": 910,
+              "id": 923,
               "nodeType": "Block",
               "src": "906:35:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 908,
+                    "id": 921,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 905,
+                      "id": 918,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 829,
+                      "referencedDeclaration": 842,
                       "src": "916:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -9227,7 +9227,7 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 906,
+                        "id": 919,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -9238,7 +9238,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 907,
+                      "id": 920,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9257,31 +9257,31 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 909,
+                  "id": 922,
                   "nodeType": "ExpressionStatement",
                   "src": "916:18:1"
                 }
               ]
             },
-            "id": 911,
+            "id": 924,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 903,
+              "id": 916,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "903:2:1"
             },
             "returnParameters": {
-              "id": 904,
+              "id": 917,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "906:0:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "892:49:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -9289,7 +9289,7 @@
           },
           {
             "body": {
-              "id": 979,
+              "id": 992,
               "nodeType": "Block",
               "src": "1052:401:1",
               "statements": [
@@ -9301,7 +9301,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 927,
+                        "id": 940,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9310,11 +9310,11 @@
                           "expression": {
                             "arguments": [
                               {
-                                "id": 923,
+                                "id": 936,
                                 "name": "name",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 913,
+                                "referencedDeclaration": 926,
                                 "src": "1076:4:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -9329,7 +9329,7 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 922,
+                              "id": 935,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -9341,14 +9341,14 @@
                                 "typeString": "type(bytes storage pointer)"
                               },
                               "typeName": {
-                                "id": 921,
+                                "id": 934,
                                 "name": "bytes",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "1070:5:1",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 924,
+                            "id": 937,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9363,7 +9363,7 @@
                               "typeString": "bytes memory"
                             }
                           },
-                          "id": 925,
+                          "id": 938,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -9380,7 +9380,7 @@
                         "operator": ">",
                         "rightExpression": {
                           "hexValue": "30",
-                          "id": 926,
+                          "id": 939,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -9402,7 +9402,7 @@
                       },
                       {
                         "hexValue": "55736572206e616d652063616e6e6f7420626520656d707479",
-                        "id": 928,
+                        "id": 941,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9428,7 +9428,7 @@
                           "typeString": "literal_string \"User name cannot be empty\""
                         }
                       ],
-                      "id": 920,
+                      "id": 933,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9442,7 +9442,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 929,
+                    "id": 942,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9457,7 +9457,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 930,
+                  "id": 943,
                   "nodeType": "ExpressionStatement",
                   "src": "1062:60:1"
                 },
@@ -9469,7 +9469,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 938,
+                        "id": 951,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9478,11 +9478,11 @@
                           "expression": {
                             "arguments": [
                               {
-                                "id": 934,
+                                "id": 947,
                                 "name": "email",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 915,
+                                "referencedDeclaration": 928,
                                 "src": "1146:5:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_memory_ptr",
@@ -9497,7 +9497,7 @@
                                   "typeString": "string memory"
                                 }
                               ],
-                              "id": 933,
+                              "id": 946,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -9509,14 +9509,14 @@
                                 "typeString": "type(bytes storage pointer)"
                               },
                               "typeName": {
-                                "id": 932,
+                                "id": 945,
                                 "name": "bytes",
                                 "nodeType": "ElementaryTypeName",
                                 "src": "1140:5:1",
                                 "typeDescriptions": {}
                               }
                             },
-                            "id": 935,
+                            "id": 948,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -9531,7 +9531,7 @@
                               "typeString": "bytes memory"
                             }
                           },
-                          "id": 936,
+                          "id": 949,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -9548,7 +9548,7 @@
                         "operator": ">",
                         "rightExpression": {
                           "hexValue": "30",
-                          "id": 937,
+                          "id": 950,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -9570,7 +9570,7 @@
                       },
                       {
                         "hexValue": "5573657220656d61696c2063616e6e6f7420626520656d707479",
-                        "id": 939,
+                        "id": 952,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -9596,7 +9596,7 @@
                           "typeString": "literal_string \"User email cannot be empty\""
                         }
                       ],
-                      "id": 931,
+                      "id": 944,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -9610,7 +9610,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 940,
+                    "id": 953,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9625,22 +9625,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 941,
+                  "id": 954,
                   "nodeType": "ExpressionStatement",
                   "src": "1132:62:1"
                 },
                 {
                   "assignments": [
-                    943
+                    956
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 943,
+                      "id": 956,
                       "mutability": "mutable",
                       "name": "userId",
                       "nodeType": "VariableDeclaration",
-                      "scope": 979,
+                      "scope": 992,
                       "src": "1205:14:1",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -9649,7 +9649,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 942,
+                        "id": 955,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1205:7:1",
@@ -9661,13 +9661,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 945,
+                  "id": 958,
                   "initialValue": {
-                    "id": 944,
+                    "id": 957,
                     "name": "numUsers",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 832,
+                    "referencedDeclaration": 845,
                     "src": "1222:8:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -9679,31 +9679,31 @@
                 },
                 {
                   "expression": {
-                    "id": 957,
+                    "id": 970,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 946,
+                        "id": 959,
                         "name": "users",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 851,
+                        "referencedDeclaration": 864,
                         "src": "1240:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                           "typeString": "mapping(uint256 => struct User.user storage ref)"
                         }
                       },
-                      "id": 948,
+                      "id": 961,
                       "indexExpression": {
-                        "id": 947,
+                        "id": 960,
                         "name": "userId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 943,
+                        "referencedDeclaration": 956,
                         "src": "1246:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9717,7 +9717,7 @@
                       "nodeType": "IndexAccess",
                       "src": "1240:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage",
+                        "typeIdentifier": "t_struct$_user_$859_storage",
                         "typeString": "struct User.user storage ref"
                       }
                     },
@@ -9726,11 +9726,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 950,
+                          "id": 963,
                           "name": "name",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 913,
+                          "referencedDeclaration": 926,
                           "src": "1261:4:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -9738,11 +9738,11 @@
                           }
                         },
                         {
-                          "id": 951,
+                          "id": 964,
                           "name": "email",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 915,
+                          "referencedDeclaration": 928,
                           "src": "1267:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_string_memory_ptr",
@@ -9751,18 +9751,18 @@
                         },
                         {
                           "expression": {
-                            "id": 952,
+                            "id": 965,
                             "name": "userGroup",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 836,
+                            "referencedDeclaration": 849,
                             "src": "1274:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_userGroup_$836_$",
+                              "typeIdentifier": "t_type$_t_enum$_userGroup_$849_$",
                               "typeString": "type(enum User.userGroup)"
                             }
                           },
-                          "id": 953,
+                          "id": 966,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -9771,13 +9771,13 @@
                           "nodeType": "MemberAccess",
                           "src": "1274:17:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_userGroup_$836",
+                            "typeIdentifier": "t_enum$_userGroup_$849",
                             "typeString": "enum User.userGroup"
                           }
                         },
                         {
                           "expression": {
-                            "id": 954,
+                            "id": 967,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -9788,7 +9788,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 955,
+                          "id": 968,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -9813,7 +9813,7 @@
                             "typeString": "string memory"
                           },
                           {
-                            "typeIdentifier": "t_enum$_userGroup_$836",
+                            "typeIdentifier": "t_enum$_userGroup_$849",
                             "typeString": "enum User.userGroup"
                           },
                           {
@@ -9821,18 +9821,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 949,
+                        "id": 962,
                         "name": "user",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 846,
+                        "referencedDeclaration": 859,
                         "src": "1256:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_user_$846_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_user_$859_storage_ptr_$",
                           "typeString": "type(struct User.user storage pointer)"
                         }
                       },
-                      "id": 956,
+                      "id": 969,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -9843,44 +9843,44 @@
                       "src": "1256:48:1",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_memory_ptr",
+                        "typeIdentifier": "t_struct$_user_$859_memory_ptr",
                         "typeString": "struct User.user memory"
                       }
                     },
                     "src": "1240:64:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_user_$846_storage",
+                      "typeIdentifier": "t_struct$_user_$859_storage",
                       "typeString": "struct User.user storage ref"
                     }
                   },
-                  "id": 958,
+                  "id": 971,
                   "nodeType": "ExpressionStatement",
                   "src": "1240:64:1"
                 },
                 {
                   "expression": {
-                    "id": 966,
+                    "id": 979,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 959,
+                        "id": 972,
                         "name": "usersByAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 856,
+                        "referencedDeclaration": 869,
                         "src": "1314:14:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$846_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$859_storage_$",
                           "typeString": "mapping(address => struct User.user storage ref)"
                         }
                       },
-                      "id": 962,
+                      "id": 975,
                       "indexExpression": {
                         "expression": {
-                          "id": 960,
+                          "id": 973,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -9891,7 +9891,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 961,
+                        "id": 974,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -9911,7 +9911,7 @@
                       "nodeType": "IndexAccess",
                       "src": "1314:26:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage",
+                        "typeIdentifier": "t_struct$_user_$859_storage",
                         "typeString": "struct User.user storage ref"
                       }
                     },
@@ -9919,24 +9919,24 @@
                     "operator": "=",
                     "rightHandSide": {
                       "baseExpression": {
-                        "id": 963,
+                        "id": 976,
                         "name": "users",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 851,
+                        "referencedDeclaration": 864,
                         "src": "1343:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                           "typeString": "mapping(uint256 => struct User.user storage ref)"
                         }
                       },
-                      "id": 965,
+                      "id": 978,
                       "indexExpression": {
-                        "id": 964,
+                        "id": 977,
                         "name": "userId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 943,
+                        "referencedDeclaration": 956,
                         "src": "1349:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -9950,23 +9950,23 @@
                       "nodeType": "IndexAccess",
                       "src": "1343:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage",
+                        "typeIdentifier": "t_struct$_user_$859_storage",
                         "typeString": "struct User.user storage ref"
                       }
                     },
                     "src": "1314:42:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_user_$846_storage",
+                      "typeIdentifier": "t_struct$_user_$859_storage",
                       "typeString": "struct User.user storage ref"
                     }
                   },
-                  "id": 967,
+                  "id": 980,
                   "nodeType": "ExpressionStatement",
                   "src": "1314:42:1"
                 },
                 {
                   "expression": {
-                    "id": 969,
+                    "id": 982,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -9976,11 +9976,11 @@
                     "prefix": false,
                     "src": "1366:10:1",
                     "subExpression": {
-                      "id": 968,
+                      "id": 981,
                       "name": "numUsers",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 832,
+                      "referencedDeclaration": 845,
                       "src": "1366:8:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -9992,7 +9992,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 970,
+                  "id": 983,
                   "nodeType": "ExpressionStatement",
                   "src": "1366:10:1"
                 },
@@ -10000,11 +10000,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 972,
+                        "id": 985,
                         "name": "userId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 943,
+                        "referencedDeclaration": 956,
                         "src": "1402:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10012,11 +10012,11 @@
                         }
                       },
                       {
-                        "id": 973,
+                        "id": 986,
                         "name": "name",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 913,
+                        "referencedDeclaration": 926,
                         "src": "1410:4:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -10024,11 +10024,11 @@
                         }
                       },
                       {
-                        "id": 974,
+                        "id": 987,
                         "name": "email",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 915,
+                        "referencedDeclaration": 928,
                         "src": "1416:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -10051,18 +10051,18 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 971,
+                      "id": 984,
                       "name": "UserAdded",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 864,
+                      "referencedDeclaration": 877,
                       "src": "1392:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (uint256,string memory,string memory)"
                       }
                     },
-                    "id": 975,
+                    "id": 988,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10077,48 +10077,48 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 976,
+                  "id": 989,
                   "nodeType": "EmitStatement",
                   "src": "1387:35:1"
                 },
                 {
                   "expression": {
-                    "id": 977,
+                    "id": 990,
                     "name": "userId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 943,
+                    "referencedDeclaration": 956,
                     "src": "1440:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 919,
-                  "id": 978,
+                  "functionReturnParameters": 932,
+                  "id": 991,
                   "nodeType": "Return",
                   "src": "1433:13:1"
                 }
               ]
             },
             "functionSelector": "079eaf34",
-            "id": 980,
+            "id": 993,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 916,
+              "id": 929,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 913,
+                  "id": 926,
                   "mutability": "mutable",
                   "name": "name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 993,
                   "src": "973:18:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10127,7 +10127,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 912,
+                    "id": 925,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "973:6:1",
@@ -10140,11 +10140,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 915,
+                  "id": 928,
                   "mutability": "mutable",
                   "name": "email",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 993,
                   "src": "1001:19:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -10153,7 +10153,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 914,
+                    "id": 927,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1001:6:1",
@@ -10168,16 +10168,16 @@
               "src": "963:63:1"
             },
             "returnParameters": {
-              "id": 919,
+              "id": 932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 918,
+                  "id": 931,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 993,
                   "src": "1043:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10186,7 +10186,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 917,
+                    "id": 930,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1043:7:1",
@@ -10200,7 +10200,7 @@
               ],
               "src": "1042:9:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "947:506:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10208,13 +10208,13 @@
           },
           {
             "body": {
-              "id": 1005,
+              "id": 1018,
               "nodeType": "Block",
               "src": "1575:85:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 998,
+                    "id": 1011,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10222,24 +10222,24 @@
                     "leftHandSide": {
                       "expression": {
                         "baseExpression": {
-                          "id": 993,
+                          "id": 1006,
                           "name": "users",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 851,
+                          "referencedDeclaration": 864,
                           "src": "1585:5:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                             "typeString": "mapping(uint256 => struct User.user storage ref)"
                           }
                         },
-                        "id": 995,
+                        "id": 1008,
                         "indexExpression": {
-                          "id": 994,
+                          "id": 1007,
                           "name": "userId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 982,
+                          "referencedDeclaration": 995,
                           "src": "1591:6:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -10253,45 +10253,45 @@
                         "nodeType": "IndexAccess",
                         "src": "1585:13:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_user_$846_storage",
+                          "typeIdentifier": "t_struct$_user_$859_storage",
                           "typeString": "struct User.user storage ref"
                         }
                       },
-                      "id": 996,
+                      "id": 1009,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "group",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 843,
+                      "referencedDeclaration": 856,
                       "src": "1585:19:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_userGroup_$836",
+                        "typeIdentifier": "t_enum$_userGroup_$849",
                         "typeString": "enum User.userGroup"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 997,
+                      "id": 1010,
                       "name": "group",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 985,
+                      "referencedDeclaration": 998,
                       "src": "1607:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_userGroup_$836",
+                        "typeIdentifier": "t_enum$_userGroup_$849",
                         "typeString": "enum User.userGroup"
                       }
                     },
                     "src": "1585:27:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
-                  "id": 999,
+                  "id": 1012,
                   "nodeType": "ExpressionStatement",
                   "src": "1585:27:1"
                 },
@@ -10299,11 +10299,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 1001,
+                        "id": 1014,
                         "name": "userId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 982,
+                        "referencedDeclaration": 995,
                         "src": "1639:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -10311,14 +10311,14 @@
                         }
                       },
                       {
-                        "id": 1002,
+                        "id": 1015,
                         "name": "group",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 985,
+                        "referencedDeclaration": 998,
                         "src": "1647:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_userGroup_$836",
+                          "typeIdentifier": "t_enum$_userGroup_$849",
                           "typeString": "enum User.userGroup"
                         }
                       }
@@ -10330,22 +10330,22 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_enum$_userGroup_$836",
+                          "typeIdentifier": "t_enum$_userGroup_$849",
                           "typeString": "enum User.userGroup"
                         }
                       ],
-                      "id": 1000,
+                      "id": 1013,
                       "name": "UserUpdated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 871,
+                      "referencedDeclaration": 884,
                       "src": "1627:11:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_enum$_userGroup_$836_$returns$__$",
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_enum$_userGroup_$849_$returns$__$",
                         "typeString": "function (uint256,enum User.userGroup)"
                       }
                     },
-                    "id": 1003,
+                    "id": 1016,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10360,24 +10360,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1004,
+                  "id": 1017,
                   "nodeType": "EmitStatement",
                   "src": "1622:31:1"
                 }
               ]
             },
             "functionSelector": "51fb2aff",
-            "id": 1006,
+            "id": 1019,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 988,
+                "id": 1001,
                 "modifierName": {
-                  "id": 987,
+                  "id": 1000,
                   "name": "ownerOnly",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 889,
+                  "referencedDeclaration": 902,
                   "src": "1545:9:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -10386,11 +10386,11 @@
               {
                 "arguments": [
                   {
-                    "id": 990,
+                    "id": 1003,
                     "name": "userId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 982,
+                    "referencedDeclaration": 995,
                     "src": "1567:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -10398,12 +10398,12 @@
                     }
                   }
                 ],
-                "id": 991,
+                "id": 1004,
                 "modifierName": {
-                  "id": 989,
+                  "id": 1002,
                   "name": "validUserId",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 902,
+                  "referencedDeclaration": 915,
                   "src": "1555:11:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -10413,16 +10413,16 @@
             "name": "updateUserType",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 986,
+              "id": 999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 982,
+                  "id": 995,
                   "mutability": "mutable",
                   "name": "userId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1006,
+                  "scope": 1019,
                   "src": "1492:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10431,7 +10431,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 981,
+                    "id": 994,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1492:7:1",
@@ -10444,32 +10444,32 @@
                 },
                 {
                   "constant": false,
-                  "id": 985,
+                  "id": 998,
                   "mutability": "mutable",
                   "name": "group",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1006,
+                  "scope": 1019,
                   "src": "1516:15:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_userGroup_$836",
+                    "typeIdentifier": "t_enum$_userGroup_$849",
                     "typeString": "enum User.userGroup"
                   },
                   "typeName": {
-                    "id": 984,
+                    "id": 997,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 983,
+                      "id": 996,
                       "name": "userGroup",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 836,
+                      "referencedDeclaration": 849,
                       "src": "1516:9:1"
                     },
-                    "referencedDeclaration": 836,
+                    "referencedDeclaration": 849,
                     "src": "1516:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
@@ -10479,12 +10479,12 @@
               "src": "1482:55:1"
             },
             "returnParameters": {
-              "id": 992,
+              "id": 1005,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1575:0:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "1459:201:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10492,70 +10492,70 @@
           },
           {
             "body": {
-              "id": 1046,
+              "id": 1059,
               "nodeType": "Block",
               "src": "1739:314:1",
               "statements": [
                 {
                   "assignments": [
-                    1018
+                    1031
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1018,
+                      "id": 1031,
                       "mutability": "mutable",
                       "name": "userToBeDeleted",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1046,
+                      "scope": 1059,
                       "src": "1749:28:1",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                        "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                         "typeString": "struct User.user"
                       },
                       "typeName": {
-                        "id": 1017,
+                        "id": 1030,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 1016,
+                          "id": 1029,
                           "name": "user",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 846,
+                          "referencedDeclaration": 859,
                           "src": "1749:4:1"
                         },
-                        "referencedDeclaration": 846,
+                        "referencedDeclaration": 859,
                         "src": "1749:4:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                          "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                           "typeString": "struct User.user"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1022,
+                  "id": 1035,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 1019,
+                      "id": 1032,
                       "name": "users",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 851,
+                      "referencedDeclaration": 864,
                       "src": "1780:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                         "typeString": "mapping(uint256 => struct User.user storage ref)"
                       }
                     },
-                    "id": 1021,
+                    "id": 1034,
                     "indexExpression": {
-                      "id": 1020,
+                      "id": 1033,
                       "name": "userId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1008,
+                      "referencedDeclaration": 1021,
                       "src": "1786:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -10569,7 +10569,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1780:13:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_user_$846_storage",
+                      "typeIdentifier": "t_struct$_user_$859_storage",
                       "typeString": "struct User.user storage ref"
                     }
                   },
@@ -10581,38 +10581,38 @@
                     "arguments": [
                       {
                         "commonType": {
-                          "typeIdentifier": "t_enum$_userGroup_$836",
+                          "typeIdentifier": "t_enum$_userGroup_$849",
                           "typeString": "enum User.userGroup"
                         },
-                        "id": 1028,
+                        "id": 1041,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 1024,
+                            "id": 1037,
                             "name": "userToBeDeleted",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1018,
+                            "referencedDeclaration": 1031,
                             "src": "1825:15:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                              "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                               "typeString": "struct User.user storage pointer"
                             }
                           },
-                          "id": 1025,
+                          "id": 1038,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "group",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 843,
+                          "referencedDeclaration": 856,
                           "src": "1825:21:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_userGroup_$836",
+                            "typeIdentifier": "t_enum$_userGroup_$849",
                             "typeString": "enum User.userGroup"
                           }
                         },
@@ -10620,18 +10620,18 @@
                         "operator": "!=",
                         "rightExpression": {
                           "expression": {
-                            "id": 1026,
+                            "id": 1039,
                             "name": "userGroup",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 836,
+                            "referencedDeclaration": 849,
                             "src": "1850:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_userGroup_$836_$",
+                              "typeIdentifier": "t_type$_t_enum$_userGroup_$849_$",
                               "typeString": "type(enum User.userGroup)"
                             }
                           },
-                          "id": 1027,
+                          "id": 1040,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -10640,7 +10640,7 @@
                           "nodeType": "MemberAccess",
                           "src": "1850:17:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_userGroup_$836",
+                            "typeIdentifier": "t_enum$_userGroup_$849",
                             "typeString": "enum User.userGroup"
                           }
                         },
@@ -10652,7 +10652,7 @@
                       },
                       {
                         "hexValue": "557365722068617320616c7265616479206265656e2064656c65746564",
-                        "id": 1029,
+                        "id": 1042,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -10678,7 +10678,7 @@
                           "typeString": "literal_string \"User has already been deleted\""
                         }
                       ],
-                      "id": 1023,
+                      "id": 1036,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -10692,7 +10692,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1030,
+                    "id": 1043,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10707,41 +10707,41 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1031,
+                  "id": 1044,
                   "nodeType": "ExpressionStatement",
                   "src": "1804:118:1"
                 },
                 {
                   "expression": {
-                    "id": 1037,
+                    "id": 1050,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 1032,
+                        "id": 1045,
                         "name": "userToBeDeleted",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1018,
+                        "referencedDeclaration": 1031,
                         "src": "1933:15:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                          "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                           "typeString": "struct User.user storage pointer"
                         }
                       },
-                      "id": 1034,
+                      "id": 1047,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "group",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 843,
+                      "referencedDeclaration": 856,
                       "src": "1933:21:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_userGroup_$836",
+                        "typeIdentifier": "t_enum$_userGroup_$849",
                         "typeString": "enum User.userGroup"
                       }
                     },
@@ -10749,18 +10749,18 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 1035,
+                        "id": 1048,
                         "name": "userGroup",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 836,
+                        "referencedDeclaration": 849,
                         "src": "1957:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_userGroup_$836_$",
+                          "typeIdentifier": "t_type$_t_enum$_userGroup_$849_$",
                           "typeString": "type(enum User.userGroup)"
                         }
                       },
-                      "id": 1036,
+                      "id": 1049,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -10769,17 +10769,17 @@
                       "nodeType": "MemberAccess",
                       "src": "1957:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_userGroup_$836",
+                        "typeIdentifier": "t_enum$_userGroup_$849",
                         "typeString": "enum User.userGroup"
                       }
                     },
                     "src": "1933:41:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
-                  "id": 1038,
+                  "id": 1051,
                   "nodeType": "ExpressionStatement",
                   "src": "1933:41:1"
                 },
@@ -10788,25 +10788,25 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 1040,
+                          "id": 1053,
                           "name": "userToBeDeleted",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1018,
+                          "referencedDeclaration": 1031,
                           "src": "2002:15:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                            "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                             "typeString": "struct User.user storage pointer"
                           }
                         },
-                        "id": 1041,
+                        "id": 1054,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "name",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 838,
+                        "referencedDeclaration": 851,
                         "src": "2002:20:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_storage",
@@ -10815,25 +10815,25 @@
                       },
                       {
                         "expression": {
-                          "id": 1042,
+                          "id": 1055,
                           "name": "userToBeDeleted",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1018,
+                          "referencedDeclaration": 1031,
                           "src": "2024:15:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_user_$846_storage_ptr",
+                            "typeIdentifier": "t_struct$_user_$859_storage_ptr",
                             "typeString": "struct User.user storage pointer"
                           }
                         },
-                        "id": 1043,
+                        "id": 1056,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "email",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 840,
+                        "referencedDeclaration": 853,
                         "src": "2024:21:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_storage",
@@ -10852,18 +10852,18 @@
                           "typeString": "string storage ref"
                         }
                       ],
-                      "id": 1039,
+                      "id": 1052,
                       "name": "UserDeleted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 877,
+                      "referencedDeclaration": 890,
                       "src": "1990:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (string memory,string memory)"
                       }
                     },
-                    "id": 1044,
+                    "id": 1057,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -10878,24 +10878,24 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1045,
+                  "id": 1058,
                   "nodeType": "EmitStatement",
                   "src": "1985:61:1"
                 }
               ]
             },
             "functionSelector": "38f14845",
-            "id": 1047,
+            "id": 1060,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1011,
+                "id": 1024,
                 "modifierName": {
-                  "id": 1010,
+                  "id": 1023,
                   "name": "ownerOnly",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 889,
+                  "referencedDeclaration": 902,
                   "src": "1709:9:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -10904,11 +10904,11 @@
               {
                 "arguments": [
                   {
-                    "id": 1013,
+                    "id": 1026,
                     "name": "userId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1008,
+                    "referencedDeclaration": 1021,
                     "src": "1731:6:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -10916,12 +10916,12 @@
                     }
                   }
                 ],
-                "id": 1014,
+                "id": 1027,
                 "modifierName": {
-                  "id": 1012,
+                  "id": 1025,
                   "name": "validUserId",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 902,
+                  "referencedDeclaration": 915,
                   "src": "1719:11:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -10931,16 +10931,16 @@
             "name": "deleteUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1009,
+              "id": 1022,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1008,
+                  "id": 1021,
                   "mutability": "mutable",
                   "name": "userId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1047,
+                  "scope": 1060,
                   "src": "1686:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -10949,7 +10949,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1007,
+                    "id": 1020,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1686:7:1",
@@ -10964,12 +10964,12 @@
               "src": "1685:16:1"
             },
             "returnParameters": {
-              "id": 1015,
+              "id": 1028,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1739:0:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "1666:387:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -10977,7 +10977,7 @@
           },
           {
             "body": {
-              "id": 1060,
+              "id": 1073,
               "nodeType": "Block",
               "src": "2134:43:1",
               "statements": [
@@ -10985,24 +10985,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 1055,
+                        "id": 1068,
                         "name": "users",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 851,
+                        "referencedDeclaration": 864,
                         "src": "2151:5:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$846_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_user_$859_storage_$",
                           "typeString": "mapping(uint256 => struct User.user storage ref)"
                         }
                       },
-                      "id": 1057,
+                      "id": 1070,
                       "indexExpression": {
-                        "id": 1056,
+                        "id": 1069,
                         "name": "userId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1049,
+                        "referencedDeclaration": 1062,
                         "src": "2157:6:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -11016,49 +11016,49 @@
                       "nodeType": "IndexAccess",
                       "src": "2151:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage",
+                        "typeIdentifier": "t_struct$_user_$859_storage",
                         "typeString": "struct User.user storage ref"
                       }
                     },
-                    "id": 1058,
+                    "id": 1071,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "group",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 843,
+                    "referencedDeclaration": 856,
                     "src": "2151:19:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
-                  "functionReturnParameters": 1054,
-                  "id": 1059,
+                  "functionReturnParameters": 1067,
+                  "id": 1072,
                   "nodeType": "Return",
                   "src": "2144:26:1"
                 }
               ]
             },
             "functionSelector": "352704b7",
-            "id": 1061,
+            "id": 1074,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getUserGroup",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1050,
+              "id": 1063,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1049,
+                  "id": 1062,
                   "mutability": "mutable",
                   "name": "userId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1061,
+                  "scope": 1074,
                   "src": "2081:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -11067,7 +11067,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1048,
+                    "id": 1061,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2081:7:1",
@@ -11082,37 +11082,37 @@
               "src": "2080:16:1"
             },
             "returnParameters": {
-              "id": 1054,
+              "id": 1067,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1053,
+                  "id": 1066,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1061,
+                  "scope": 1074,
                   "src": "2118:14:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_userGroup_$836",
+                    "typeIdentifier": "t_enum$_userGroup_$849",
                     "typeString": "enum User.userGroup"
                   },
                   "typeName": {
-                    "id": 1052,
+                    "id": 1065,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 1051,
+                      "id": 1064,
                       "name": "User.userGroup",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 836,
+                      "referencedDeclaration": 849,
                       "src": "2118:14:1"
                     },
-                    "referencedDeclaration": 836,
+                    "referencedDeclaration": 849,
                     "src": "2118:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
@@ -11121,7 +11121,7 @@
               ],
               "src": "2117:16:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "2059:118:1",
             "stateMutability": "view",
             "virtual": false,
@@ -11129,7 +11129,7 @@
           },
           {
             "body": {
-              "id": 1074,
+              "id": 1087,
               "nodeType": "Block",
               "src": "2282:58:1",
               "statements": [
@@ -11137,24 +11137,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 1069,
+                        "id": 1082,
                         "name": "usersByAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 856,
+                        "referencedDeclaration": 869,
                         "src": "2299:14:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$846_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_user_$859_storage_$",
                           "typeString": "mapping(address => struct User.user storage ref)"
                         }
                       },
-                      "id": 1071,
+                      "id": 1084,
                       "indexExpression": {
-                        "id": 1070,
+                        "id": 1083,
                         "name": "_userAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1063,
+                        "referencedDeclaration": 1076,
                         "src": "2314:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -11168,49 +11168,49 @@
                       "nodeType": "IndexAccess",
                       "src": "2299:28:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_user_$846_storage",
+                        "typeIdentifier": "t_struct$_user_$859_storage",
                         "typeString": "struct User.user storage ref"
                       }
                     },
-                    "id": 1072,
+                    "id": 1085,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "group",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 843,
+                    "referencedDeclaration": 856,
                     "src": "2299:34:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
-                  "functionReturnParameters": 1068,
-                  "id": 1073,
+                  "functionReturnParameters": 1081,
+                  "id": 1086,
                   "nodeType": "Return",
                   "src": "2292:41:1"
                 }
               ]
             },
             "functionSelector": "03bc3466",
-            "id": 1075,
+            "id": 1088,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getUserGroupByAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1064,
+              "id": 1077,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1063,
+                  "id": 1076,
                   "mutability": "mutable",
                   "name": "_userAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1075,
+                  "scope": 1088,
                   "src": "2223:20:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -11219,7 +11219,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1062,
+                    "id": 1075,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2223:7:1",
@@ -11235,37 +11235,37 @@
               "src": "2213:36:1"
             },
             "returnParameters": {
-              "id": 1068,
+              "id": 1081,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1067,
+                  "id": 1080,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1075,
+                  "scope": 1088,
                   "src": "2271:9:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_userGroup_$836",
+                    "typeIdentifier": "t_enum$_userGroup_$849",
                     "typeString": "enum User.userGroup"
                   },
                   "typeName": {
-                    "id": 1066,
+                    "id": 1079,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 1065,
+                      "id": 1078,
                       "name": "userGroup",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 836,
+                      "referencedDeclaration": 849,
                       "src": "2271:9:1"
                     },
-                    "referencedDeclaration": 836,
+                    "referencedDeclaration": 849,
                     "src": "2271:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_userGroup_$836",
+                      "typeIdentifier": "t_enum$_userGroup_$849",
                       "typeString": "enum User.userGroup"
                     }
                   },
@@ -11274,7 +11274,7 @@
               ],
               "src": "2270:11:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "2183:157:1",
             "stateMutability": "view",
             "virtual": false,
@@ -11282,54 +11282,54 @@
           },
           {
             "body": {
-              "id": 1082,
+              "id": 1095,
               "nodeType": "Block",
               "src": "2399:32:1",
               "statements": [
                 {
                   "expression": {
-                    "id": 1080,
+                    "id": 1093,
                     "name": "numUsers",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 832,
+                    "referencedDeclaration": 845,
                     "src": "2416:8:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 1079,
-                  "id": 1081,
+                  "functionReturnParameters": 1092,
+                  "id": 1094,
                   "nodeType": "Return",
                   "src": "2409:15:1"
                 }
               ]
             },
             "functionSelector": "65f88c0d",
-            "id": 1083,
+            "id": 1096,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getNumUsers",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1076,
+              "id": 1089,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2366:2:1"
             },
             "returnParameters": {
-              "id": 1079,
+              "id": 1092,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1078,
+                  "id": 1091,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1083,
+                  "scope": 1096,
                   "src": "2390:7:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -11338,7 +11338,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1077,
+                    "id": 1090,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2390:7:1",
@@ -11352,14 +11352,14 @@
               ],
               "src": "2389:9:1"
             },
-            "scope": 1084,
+            "scope": 1097,
             "src": "2346:85:1",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1085,
+        "scope": 1098,
         "src": "57:2376:1"
       }
     ],
@@ -11373,12 +11373,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xE0E0dC907407568624c1A5E11F86AfD612872CF8",
-      "transactionHash": "0xe67d59b4204285f2a3c18cdcb29677ff016235e14f25634608afd20d946f3f76"
+      "address": "0x7697b8a5D61dbc557041deefFfA65dfE997167Cb",
+      "transactionHash": "0xf33b12353af17520681c2d2393adf499bb416a7604089680a42cbe75672e567d"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-04-21T14:03:10.565Z",
+  "updatedAt": "2024-04-21T14:28:45.220Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
